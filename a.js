@@ -1,5 +1,4 @@
 var name = 1;
-var energy = 2;
 function Animal (name, energy) {
   let animal = {}
   animal.name = name

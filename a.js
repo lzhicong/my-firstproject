@@ -1,25 +1,7 @@
-var name = 1;
-function Animal (name, energy) {
-  let animal = {}
-  animal.name = name
-  animal.energy = energy
-
-  animal.eat = function (amount) {
-    console.log(`${this.name} is eating.`)
-    this.energy += amount
-  }
-
-  animal.sleep = function (length) {
-    console.log(`${this.name} is sleeping.`)
-    this.energy += length
-  }
-
-  animal.play = function (length) {
-    console.log(`${this.name} is playing.`)
-    this.energy -= length
-  }
-
-  return animal
-}
-
-console.log(Animal)
+const model1 = 'info';
+const checkCarModel = (model) => {
+    if(['peugeot', 'renault','info'].includes(model)) { 
+    console.log(model);
+    }
+};
+checkCarModel(model1);
